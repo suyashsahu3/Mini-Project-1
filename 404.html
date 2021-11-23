@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>Search Results</title>
+    <title>404</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-   
+    <script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0"></script>
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
@@ -47,10 +46,11 @@
                       </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="index.html#aus">About</a>
                       </li>
-                      
                       <li class="rd-nav-item"><a class="rd-nav-link" href="buy.html">Buy</a>
                       </li>
-                      
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="search-results.html">Search results</a>
+                        
+                      </li>
                       <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contact Us</a>
                       </li>
                     </ul>
@@ -61,28 +61,30 @@
           </nav>
         </div>
       </header>
-      <!--Search results-->
-      <section class="section novi-bg novi-bg-img section-md section-top-shadow">
+      <section class="section novi-bd novi-bg-img section-lg text-center bg-primary">
         <div class="container">
-          <h2 class="text-center text-sm-left">Search <span class="h2-style">results:</span></h2>
-          <div class="row">
-            <div class="col-lg-9">
+          <div class="row row-50 row-fix justify-content-center">
+            <div class="col-lg-7 col-md-8 col-sm-10">
+              <h1>404</h1>
+              <h2>Sorry, page not found!</h2>
+              <p class="text-black">The page you are looking for might have been removed, <br> had its name changed, or is temporarily unavailable.</p>
+              <p class="text-black">Please try using our search box below to look for <br> information on the website</p>
+            </div>
+            <div class="col-lg-7 col-md-8 col-sm-10">
               <!--RD Search-->
-              <form class="rd-form rd-search rd-form-inline" action="search-results.html" method="GET">
+              <form class="rd-form rd-search rd-search-404" action="search-results.html" method="GET">
                 <div class="form-wrap">
                   <label class="form-label" for="rd-search-form-input">Search</label>
                   <input class="form-input" id="rd-search-form-input" type="text" name="s" autocomplete="off">
-                </div>
-                <div class="form-wrap form-button">
-                  <button class="button button-primary" type="submit">Search</button>
+                  <button class="icon linearicons-magnifier" type="submit"></button>
                 </div>
               </form>
-              <div class="rd-search-results"></div>
             </div>
           </div>
         </div>
       </section>
-      <footer id="foot" class="footer novi-bg novi-bg-img">
+
+      <footer class="footer novi-bg novi-bg-img">
         <div class="footer-content">
           <div class="container">
             <div class="row row-30">
@@ -126,6 +128,7 @@
                   <li><a class="footer-link" href="#">GitHub : suyashsahu3</a></li>
                 </ul>
               </div>
+              
             </div>
           </div>
         </div>
@@ -136,8 +139,8 @@
         </div>
       </footer>
     </div>
-    <div class="snackbars" id="form-output-global"></div>
+ 
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-  <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager --></body>
+  </body>
 </html>

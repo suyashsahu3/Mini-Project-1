@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+    
+    <div class="he" style="background-image: url(images/home.jpg);" >
+        <a href="index.html"><img src="images/h1.png"></a>
+        <div class="form">
+            <div class="bu">
+                <div id="bck"></div>
+                <button type="button" class="btn" onclick="login()">Log In</button>
+                <button type="button" class="btn" onclick="register()">Sign Up</button>
+            </div>
+            <div class="social">
+                <a href="#"><img src="images/fb1.png"></a>
+                <a href="#"><img src="images/twi.png"></a>
+                <a href="#"><img src="images/g1.png"></a>
+            </div>
+            <form id="login" class="input">
+                <input type="text" class="field" placeholder="User Id" required>
+                <input type="password"  class="field" placeholder="Enter Password" required>
+                <input type="checkbox" class="c-box"><span>Remember Password</span>
+                <a href="index.html"><button type="submit" class="submit-btn">Log In</button></a> 
+            </form> 
+            <form id="register" class="input">
+                <input type="text" id="uid" class="field" placeholder="User Id" required>
+                <input type="email" id="email" class="field" placeholder="Email Id" required>
+                
+                <input type="password" id="password" class="field" placeholder="Enter Password" required>
+                <input type="checkbox" class="c-box"><span>I agree to the terms and condition</span>
+                <button type="submit" id="reg" class="submit-btn" onclick="login()">Register</button>
+                
+            </form>
+            
+             
+        </div>
+        
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("bck");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/read.js"></script>
+</body>
+</html>
